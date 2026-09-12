@@ -148,6 +148,8 @@ function regel(kaart, startkaart){
 
 // spel starten
 function start(){
+    document.querySelector(".settings").style.visibility = "hidden"
+    document.querySelector(".instellingen").style.visibility = "hidden"
     if (numOfplayers != 0){
         players = []
         for (let i = 0; i < numOfplayers; i++){
