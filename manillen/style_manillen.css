@@ -1,0 +1,206 @@
+body {
+    background-color: #05521a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+}
+
+
+.vierkant {
+    border-color: #046f21;
+    border-width: 5px 0;
+    border-style: solid;
+    height: 400px;
+    width: 900px;
+    
+
+
+}
+
+#cirkel {
+    border-color: #046f21;
+    border-style: solid;
+    height: 400px;
+    width: 200px;
+}
+
+.links {
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    border-width: 5px 0 5px 5px
+}
+
+.rechts {
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    border-width: 5px 5px 5px 0;
+}
+
+.ovaal {
+    display: flex;
+    align-items: center;
+}
+
+.settings {
+    width: 70vw;
+    height: 70vh;
+    background-color: rgb(155, 155, 155);
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    border-radius: 20px;
+}
+
+.settings h2 { 
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+.start {
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+    grid-row: 3;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.instellingen {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 50px 1fr 1fr;
+    visibility: visible;
+}
+
+.instellingen .aantalspelers {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.instellingen .team {
+    grid-row: 1;
+    grid-column: 4;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    visibility: hidden;
+}
+
+.instellingen .team span {
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+}
+
+.instellingen .team span p {
+    height: 20px;
+    margin: 0 7px;
+}
+
+.settingsBtn .cirkel {
+    background-color: grey;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    
+}
+
+.settingsBtn {
+    background-color: #05521a;
+    border: 0;
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    border-radius: 50%;
+    position: absolute;
+    top: 1%;
+    right: 0.5%;
+}
+
+.settingsBtn .kleinereCirkel {
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 15px;
+    width: 15px;
+    background-color: inherit;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.settingsBtn .vierkant {
+    background-color: grey;
+    height: 10px;
+    width: 10px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    border-radius: 30%;
+}
+
+.settingsBtn #deg0 {
+    transform: translate(18px, 0px);
+}
+
+.settingsBtn #deg45 {
+    transform: translate(13px, 13px) rotate(45deg);
+}
+
+.settingsBtn #deg90 {
+    transform: translate(0px, 18px);
+}
+
+.settingsBtn #deg135 {
+    transform: translate(-13px, 13px) rotate(45deg);
+}
+
+.settingsBtn #deg180{
+    transform: translate(-18px, 0px);
+}
+
+.settingsBtn #deg225 {
+    transform: translate(-13px, -13px) rotate(45deg);
+}
+
+.settingsBtn #deg270 {
+    transform: translate(0px, -18px);
+}
+
+.settingsBtn #deg315 {
+    transform: translate(13px, -13px) rotate(45deg);
+}

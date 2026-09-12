@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style_manillen.css">
+</head>
+<body>
+    <div class="ovaal">
+        <div class="links" id="cirkel"></div>
+        <div class="vierkant"></div>
+        <div class="rechts" id="cirkel"></div>
+    </div>
+    <div class="settings">
+        <h2>Instellingen</h2>
+        <div class="instellingen">
+            <select class="aantalspelers" onchange="updateNumOfPlayers()">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <div class="team">
+                <span>
+                    <select class="speler1">
+                        <option value="0">player</option>
+                    </select>
+                    <p>speelt met</p>
+                    <select class="speler2">
+                        <option value="0">player</option>
+                    </select>
+                </span>
+            </div>
+        </div>
+        <button class="start" onclick="start()">Start</button>
+    
+    </div>
+    <button class="settingsBtn">
+        <div class="cirkel"></div>
+        <div class="kleinereCirkel"></div>
+        <div class="vierkant" id="deg0"></div>
+        <div class="vierkant" id="deg45"></div>
+        <div class="vierkant" id="deg90"></div>
+        <div class="vierkant" id="deg135"></div>
+        <div class="vierkant" id="deg180"></div>
+        <div class="vierkant" id="deg225"></div>
+        <div class="vierkant" id="deg270"></div>
+        <div class="vierkant" id="deg315"></div>
+    </button>
+    <!--<div class="kaartenspeler">
+        <button id="kaart1"></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>-->
+    
+</body>
+<script src="./script_manillen.js"></script>
+</html>
